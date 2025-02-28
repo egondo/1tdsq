@@ -1,0 +1,31 @@
+São Paulo 0 X 5 Palmeiras
+São Paulo 1 X 3 Portuguesa
+São Paulo 3 X 2 Corinthians
+São Paulo 3 X 2 Juventus
+São Paulo 0 X 1 Nacional
+Palmeiras 1 X 5 Portuguesa
+Palmeiras 0 X 2 Corinthians
+Palmeiras 2 X 0 Juventus
+Palmeiras 3 X 2 Nacional
+Portuguesa 3 X 3 Corinthians
+Portuguesa 3 X 1 Juventus
+Portuguesa 2 X 5 Nacional
+Corinthians 0 X 1 Juventus
+Corinthians 5 X 4 Nacional
+Juventus 4 X 5 Nacional
+São Paulo 0 X 3 Palmeiras
+São Paulo 4 X 2 Portuguesa
+São Paulo 2 X 0 Corinthians
+São Paulo 5 X 5 Juventus
+São Paulo 2 X 2 Nacional
+Palmeiras 0 X 2 Portuguesa
+Palmeiras 4 X 5 Corinthians
+Palmeiras 2 X 1 Juventus
+Palmeiras 5 X 4 Nacional
+Portuguesa 5 X 2 Corinthians
+Portuguesa 4 X 5 Juventus
+Portuguesa 2 X 0 Nacional
+Corinthians 2 X 2 Juventus
+Corinthians 4 X 0 Nacional
+Juventus 1 X 5 Nacional
+Finalizando resultados do campeonato

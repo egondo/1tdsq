@@ -1,0 +1,8 @@
+Na aula de hoje aprendemos como tratar exceções 
+utilizando a linguagem Python.
+
+Também vimos um pouco de comandos Unix-like (MACOS)
+para modificação de acesso a arquivos.
+
+Estamos aprendendo a manipular arquivos do tipo texto
+em Python.
