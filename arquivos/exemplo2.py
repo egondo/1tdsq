@@ -1,6 +1,6 @@
 import random
 
-times = ["São Paulo", "Palmeiras", "Portuguesa", "Corinthians", "Juventus", "Nacional"]
+times = ["São Paulo", "Palmeiras", "Portuguesa", "Corinthians", "Juventus", "Nacional", "Santos", "Audax", "Água Santa", "Red Bull"]
 
 with open("arquivos/resultados.txt", mode="w") as arq:
     for i in range(len(times)):

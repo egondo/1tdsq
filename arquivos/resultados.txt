@@ -1,31 +1,90 @@
-São Paulo 0 X 5 Palmeiras
-São Paulo 1 X 3 Portuguesa
-São Paulo 3 X 2 Corinthians
-São Paulo 3 X 2 Juventus
-São Paulo 0 X 1 Nacional
-Palmeiras 1 X 5 Portuguesa
-Palmeiras 0 X 2 Corinthians
-Palmeiras 2 X 0 Juventus
-Palmeiras 3 X 2 Nacional
-Portuguesa 3 X 3 Corinthians
-Portuguesa 3 X 1 Juventus
-Portuguesa 2 X 5 Nacional
-Corinthians 0 X 1 Juventus
-Corinthians 5 X 4 Nacional
-Juventus 4 X 5 Nacional
 São Paulo 0 X 3 Palmeiras
-São Paulo 4 X 2 Portuguesa
-São Paulo 2 X 0 Corinthians
-São Paulo 5 X 5 Juventus
-São Paulo 2 X 2 Nacional
-Palmeiras 0 X 2 Portuguesa
+São Paulo 1 X 1 Portuguesa
+São Paulo 1 X 2 Corinthians
+São Paulo 0 X 4 Juventus
+São Paulo 0 X 2 Nacional
+São Paulo 3 X 4 Santos
+São Paulo 5 X 0 Audax
+São Paulo 4 X 5 Água Santa
+São Paulo 4 X 1 Red Bull
+Palmeiras 3 X 4 Portuguesa
 Palmeiras 4 X 5 Corinthians
-Palmeiras 2 X 1 Juventus
-Palmeiras 5 X 4 Nacional
-Portuguesa 5 X 2 Corinthians
-Portuguesa 4 X 5 Juventus
-Portuguesa 2 X 0 Nacional
-Corinthians 2 X 2 Juventus
+Palmeiras 1 X 1 Juventus
+Palmeiras 1 X 3 Nacional
+Palmeiras 0 X 4 Santos
+Palmeiras 5 X 0 Audax
+Palmeiras 3 X 4 Água Santa
+Palmeiras 1 X 3 Red Bull
+Portuguesa 0 X 5 Corinthians
+Portuguesa 5 X 4 Juventus
+Portuguesa 2 X 3 Nacional
+Portuguesa 3 X 5 Santos
+Portuguesa 0 X 2 Audax
+Portuguesa 3 X 3 Água Santa
+Portuguesa 5 X 4 Red Bull
+Corinthians 0 X 5 Juventus
+Corinthians 4 X 2 Nacional
+Corinthians 1 X 3 Santos
+Corinthians 5 X 2 Audax
+Corinthians 4 X 3 Água Santa
+Corinthians 3 X 4 Red Bull
+Juventus 5 X 5 Nacional
+Juventus 5 X 5 Santos
+Juventus 4 X 5 Audax
+Juventus 1 X 4 Água Santa
+Juventus 0 X 2 Red Bull
+Nacional 5 X 3 Santos
+Nacional 4 X 5 Audax
+Nacional 2 X 3 Água Santa
+Nacional 4 X 0 Red Bull
+Santos 1 X 4 Audax
+Santos 3 X 4 Água Santa
+Santos 1 X 4 Red Bull
+Audax 3 X 1 Água Santa
+Audax 1 X 1 Red Bull
+Água Santa 1 X 0 Red Bull
+São Paulo 3 X 0 Palmeiras
+São Paulo 2 X 3 Portuguesa
+São Paulo 0 X 5 Corinthians
+São Paulo 3 X 0 Juventus
+São Paulo 0 X 5 Nacional
+São Paulo 3 X 1 Santos
+São Paulo 5 X 3 Audax
+São Paulo 3 X 2 Água Santa
+São Paulo 5 X 3 Red Bull
+Palmeiras 3 X 0 Portuguesa
+Palmeiras 1 X 4 Corinthians
+Palmeiras 1 X 3 Juventus
+Palmeiras 5 X 0 Nacional
+Palmeiras 5 X 5 Santos
+Palmeiras 2 X 2 Audax
+Palmeiras 0 X 0 Água Santa
+Palmeiras 4 X 4 Red Bull
+Portuguesa 0 X 2 Corinthians
+Portuguesa 0 X 5 Juventus
+Portuguesa 5 X 4 Nacional
+Portuguesa 1 X 0 Santos
+Portuguesa 5 X 0 Audax
+Portuguesa 0 X 4 Água Santa
+Portuguesa 0 X 1 Red Bull
+Corinthians 1 X 4 Juventus
 Corinthians 4 X 0 Nacional
+Corinthians 4 X 2 Santos
+Corinthians 3 X 4 Audax
+Corinthians 4 X 0 Água Santa
+Corinthians 2 X 0 Red Bull
 Juventus 1 X 5 Nacional
-Finalizando resultados do campeonato
+Juventus 4 X 5 Santos
+Juventus 0 X 1 Audax
+Juventus 2 X 5 Água Santa
+Juventus 1 X 2 Red Bull
+Nacional 1 X 2 Santos
+Nacional 1 X 4 Audax
+Nacional 1 X 2 Água Santa
+Nacional 5 X 2 Red Bull
+Santos 4 X 3 Audax
+Santos 5 X 5 Água Santa
+Santos 5 X 2 Red Bull
+Audax 5 X 0 Água Santa
+Audax 4 X 2 Red Bull
+Água Santa 0 X 5 Red Bull
