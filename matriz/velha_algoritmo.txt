@@ -1,0 +1,11 @@
+jogador = 'X'
+cria a matriz
+enquanto tem espaco vazio na matriz e nao houve ganhador:
+    imprime a matriz do jogo
+    pede para o jogador uma lin e col
+    joga(matriz, lin, col, jogador)
+    se jogada é valida entao
+        troco jogador
+    senao
+        print("Jogada invalida!")
+
