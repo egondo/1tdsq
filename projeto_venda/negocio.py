@@ -8,10 +8,10 @@ def cadastra_venda ( cliente : dict , venda : dict ):
     else :
         venda ['id_cliente'] = cli [0]
     itens_venda = venda ['itens']
-    venda . pop ('itens')
-    banco . insere_venda ( venda )
-    idvenda = venda ['id']
-    for iv in itens_venda :
+    venda.pop('itens')
+    banco.insere_venda(venda)
+    idvenda = venda['id']
+    for iv in itens_venda:
         iv ['id_venda'] = idvenda
         banco.insere_itemvenda ( iv )
 
