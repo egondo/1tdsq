@@ -13,7 +13,7 @@ def insere_cliente(c: dict):
             new_id = cur.var(oracledb.NUMBER)
             c['id'] = new_id
             cur.execute(ins, c)
-            c['novo_id'] = new_id.getvalue()[0]
+            c['id'] = new_id.getvalue()[0]
         con.commit()
 
 

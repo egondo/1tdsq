@@ -6,7 +6,7 @@ def cadastra_venda ( cliente : dict , venda : dict ):
         banco.insere_cliente(cliente)
         venda['id_cliente'] = cliente ['id']
     else :
-        venda ['id_cliente'] = cli [0]
+        venda ['id_cliente'] = cli[0]
     itens_venda = venda ['itens']
     venda.pop('itens')
     banco.insere_venda(venda)
@@ -17,7 +17,7 @@ def cadastra_venda ( cliente : dict , venda : dict ):
 
 if __name__ == "__main__":
     cliente = {
-        'documento': '324.503.928-85',
+        'documento': '324.503.623-85',
         'nome': 'Fernando Gomes',
         'email': 'fefe@fiap.com.br'
     }
