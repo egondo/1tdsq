@@ -1,0 +1,6 @@
+
+
+(webservice) API SOAP: Simple Object Access Protocol
+API Rest: REpresentational State Transfer
+
+JSON: JavaScript Object Notation
