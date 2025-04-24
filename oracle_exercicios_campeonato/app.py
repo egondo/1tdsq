@@ -4,6 +4,10 @@ import traceback
 
 app = Flask(__name__)
 
+@app.route("/partidas", methods=['GET'])
+def hello():
+    return ({"msg": "hello"}, 200)
+
 @app.route("/partidas", methods=["POST"])
 def insere_partida():
     partida = request.json
