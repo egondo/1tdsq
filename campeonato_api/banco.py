@@ -39,6 +39,33 @@ def altera_time(time: dict):
             cur.execute(upt, time)
         con.commit()
 
+def recupera_todos_times() -> list:
+    sql = "select id, nome, vitorias, derrotas, empates, gols_marcados, gols_sofridos from t_time order by nome"
+
+    resp = []
+
+    with get_conexao() as con:
+        with con.cursor() as cur:
+            cur.execute(sql)
+            dados = cur.fetchall()
+    
+    for reg in dados:
+        time = {
+            "id": reg[0],
+            "nome": reg[1],
+            "vitorias": reg[2],
+            "derrotas": reg[3],
+            "empates": reg[4],
+            "gols_marcados": reg[5],
+            "gols_sofridos": reg[6],
+            "saldo": reg[5] - reg[6],
+            "pontos": 3 * reg[2] + reg[4]
+        }
+        resp.append(time)
+    return resp
+
+
+
 def recupera_time_id(id: int):
     sel = "select id, nome, vitorias, derrotas, empates, gols_marcados, gols_sofridos from t_time where id = :id"
     with get_conexao() as con:

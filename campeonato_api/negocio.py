@@ -1,5 +1,9 @@
 import banco
 
+def recupera_times():
+    return banco.recupera_todos_times()
+
+
 def cadastra_partida(partida: dict):
     id_casa = partida['casa']
     id_visitante = partida['visitante']

@@ -8,6 +8,17 @@ app = Flask(__name__)
 def hello():
     return ({"msg": "hello"}, 200)
 
+@app.route("/times", methods=['GET'])
+def recupera_times():
+    try:
+        dados = negocio.recupera_times()
+        return (dados, 200)
+    except Exception as erro:
+        traceback.print_exc()
+        info = {'title': str(erro), 'status': 400}
+        return (info, 400)
+
+
 @app.route("/partidas", methods=["POST"])
 def insere_partida():
     partida = request.json
