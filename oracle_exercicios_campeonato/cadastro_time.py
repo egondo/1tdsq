@@ -1,7 +1,7 @@
 import banco
 import datetime
 
-times = ["Palmeira", "Corinthians", "Cruzeiro", "Coritiba", "Chapecoense", "Criciúma", "Caxias do Sul", "Ponte Preta", "Portuguesa", "Taubaté", "Tatuapé", "Tolima", 'Torino', 'Tocantins']
+times = ["Palmeira", "Corinthians", 'Santos', 'São Paulo', 'Portuguesa']
 
 ini = datetime.datetime.now()
 lista = []
