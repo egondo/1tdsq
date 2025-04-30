@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Cadastra Partida</h3>
+
+    <p>Casa: <select name="casa" id="casa">
+                <option value=""></option>
+             </select> 
+             <input type="text" name="gcasa" id="gcasa" size="3" />
+             X 
+             <input type="text" name="gvisitante" id="gvisitante" size="3" />
+             <select name="visitante" id="visitante">
+                <option value=""></option>
+             </select>
+        Visitante
+    </p>
+
+    <p><input type="button" id="botao" value="cadastra" /></p>
+    
+    <script>
+        selectCasa = document.getElementById('casa')
+        selectVisi = document.getElementById('visitante')        
+        times = [
+            {'time': 'Palmeiras', 'id': 81}, 
+            {'time': 'Corinthians', 'id': 82}, 
+            {'time': 'Santos', 'id': 83}, 
+            {'time': 'São Paulo', 'id': 84},
+            {'time': 'Portuguesa', 'id': 85}
+        ]
+        times.forEach(element => {
+            var optCasa = document.createElement('option')
+            optCasa.value = element.id
+            optCasa.innerHTML = element.time
+
+            var optVisi = document.createElement('option')
+            optVisi.value = element.id
+            optVisi.innerHTML = element.time
+            //console.log(element)
+            selectCasa.appendChild(optCasa)
+            selectVisi.appendChild(optVisi)
+        });
+
+        botao = document.getElementById('botao')
+        botao.addEventListener('click', function(){
+            selectCasa = document.getElementById('casa')
+            selectVisi = document.getElementById('visitante')
+            
+            gcasa = document.getElementById('gcasa')
+            gvisitante = document.getElementById('gvisitante')
+
+            dado = {
+                "gcasa": parseInt(gcasa.value),
+                "gvisitante": parseInt(gvisitante.value),
+                "local": "Morumbi",
+                "data": '23/04/2025 20:00',
+                "casa": parseInt(selectCasa.value),
+                "visitante": parseInt(selectVisi.value)
+            }
+            //console.log(dado)
+            link = "https://onetdsq.onrender.com/partidas"
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dado)
+            }
+
+            fetch(link, options)
+                .then(response => {
+                    if (response.status != 201) {
+                        throw new Error('HTTP error! status: ${response.status}')
+                    }
+                    return response.json()
+                })
+                .then(responseData => {
+                    console.log('Success:', responseData)
+                })
+                .catch(error => {
+                    console.error('Error:', error)
+                })       
+                /*
+            cep = document.getElementById('')
+            //console.log(cep.value)
+            //alert(cep.value)
+            link = "https://viacep.com.br/ws/" + cep.value + "/json"
+            fetch(link)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                    log = document.getElementById("logradouro")
+                    log.value = data.logradouro
+
+                    bai = document.getElementById("bairro")
+                    bai.value = data.bairro
+
+                    city = document.getElementById("cidade")
+                    city.value = data.localidade
+                }) */
+        })
+    </script>
+</body>
+</html>
