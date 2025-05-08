@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        <h3>Aplicação da enquete:</h3>
+
+    </form>
+    <p><input type="button" id="btn_cad" value="cadastra" /></p>
+    <script>
+        function criaCaixaTexto(reg) {
+            return `<p><input type=text name=${reg.id} id=${reg.id} /></p>`
+        }
+
+        function criaRadio(reg) {
+            aux = ""
+            for (let i = 0; i < reg.itens.length; i++) {
+                aux = aux + `<p><label><input type=radio name=${reg.id} value="${reg.itens[i]}" /> ${reg.itens[i]} </label></p>`
+            }
+            return aux
+        }
+
+        function criaCheck(reg) {
+            aux = ""
+            for (let i = 0; i < reg.itens.length; i++) {
+                aux = aux + `<p><label><input type=checkbox name=${reg.id} value="${reg.itens[i]}" /> ${reg.itens[i]} </label></p>`
+            }
+            return aux
+        }
+
+
+        let url = "http://127.0.0.1:5000/perguntas/1"
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                let form = document.getElementById("form")
+                for (let i = 0; i < data.length; i++) {
+                    form.innerHTML = form.innerHTML + `<p>${data[i].numero}) ${data[i].questao}</p>`
+
+                    if (data[i].tipo === "aberta") {
+                        form.innerHTML = form.innerHTML + criaCaixaTexto(data[i])
+                    }
+                    else if (data[i].tipo === "unica") {
+                        form.innerHTML = form.innerHTML + criaRadio(data[i])
+                    }
+                    else if (data[i].tipo === "multipla") {
+                        form.innerHTML = form.innerHTML + criaCheck(data[i])
+                    }
+                }
+            })
+
+        btn_cad = document.getElementById("btn_cad")
+        btn_cad.addEventListener('click', function () {
+            var elementos = document.getElementsByTagName('input');
+            for (i = 0; i < elementos.length; i++) {
+                if (elementos[i].type === "radio" || elementos[i].type === "checkbox") {
+                    if (elementos[i].checked)
+                        alert(`${elementos[i].name} => ${elementos[i].value}`)
+
+                }
+                else if (elementos[i].type === "text") {
+                    alert(`${elementos[i].name} => ${elementos[i].value}`)
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
