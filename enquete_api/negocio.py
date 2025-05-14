@@ -36,6 +36,24 @@ def recupera_perguntas(enquete: int) -> list:
         traceback.print_exc()
         raise erro
     
+
+def cadastra_respostas(dados):
+    try:
+        usuario = None
+        i = 0
+        while i < len(dados):
+            if int(dados[i]['id']) == 0:
+                usuario = dados[i]['valor']
+                dados.pop(i)
+                break
+            i = i + 1
+
+        print(usuario, dados)
+        banco.inclui_respostas(dados, usuario)
+    except Exception as erro:
+        traceback.print_exc()
+        raise erro
+
 if __name__ == "__main__":
     dados = recupera_perguntas(1)
     for reg in dados:
