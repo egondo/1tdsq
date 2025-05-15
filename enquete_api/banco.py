@@ -15,6 +15,15 @@ def recupera_perguntas(enquete_id: int) -> list:
             dados = cur.fetchall()
             return dados
         
+def inclui_respostas(dados, usuario):
+    sql = f"insert into tb_resposta(usuario, data, resposta, pergunta_id) values('{usuario}', systimestamp, :valor, :id)"
+    with get_conexao() as con:
+        with con.cursor() as cur:
+            for reg in dados:
+                cur.execute(sql, reg)
+        con.commit()
+
+
 if __name__ == "__main__":
     registros = recupera_perguntas(1)
     for pergunta in registros:

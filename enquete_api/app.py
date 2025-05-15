@@ -12,4 +12,13 @@ def recupera_perguntas(enquete: int):
     dados = negocio.recupera_perguntas(enquete)
     return (jsonify(dados), 200)
 
+
+@app.route("/respostas", methods=["POST"])
+@cross_origin()
+def recebe_respostas():
+    dados = request.json
+    negocio.cadastra_respostas(dados)
+    resp = {"title": "sucesso", "status": 201}
+    return (jsonify(resp), 201)
+
 app.run(debug=True)
