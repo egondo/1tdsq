@@ -33,3 +33,22 @@ with col2:
     
     tabela.plot(y=['admitido', 'desligado', 'saldo'], kind='bar', title='Trabalhadores')
     st.pyplot(plt)
+
+
+df_salario = outro_df
+
+df_salario = pd.pivot_table(df_salario, values="idade", index=['competenciamov'], 
+                            columns=['sexo', 'saldomovimentacao'], aggfunc=("mean", "median", "count"))
+st.write(df_salario)
+
+col3, col4 = st.columns(2)
+with col3:
+    aux_data = st.selectbox("Data", ['01/25', '02/25', '03/25'])
+    tipo = st.selectbox("Admitidos/desligados", ['admitido', 'desligado'])
+    df_hist = outro_df.query(f"competenciamov == '{aux_data}' and saldomovimentacao == '{tipo}'")
+    fig, ax = plt.subplots()
+    ax.hist(df_hist['idade'], bins=30)  # Adjust bins as needed
+    ax.set_xlabel('Values')
+    ax.set_ylabel('Frequency')
+    ax.set_title('Histogram of idade')
+    st.pyplot(fig)
